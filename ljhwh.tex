@@ -1,0 +1,101 @@
+%----------------------------------------------------------------
+% lijin's homework template
+% Modified by lijin, 11 Mar 2018
+% Use this file as input in main file: \input{ljhwh.tex}
+% Compile with cmdlet: xelatex -shell-escape eg.tex
+% -------Original Version---------------
+% HMC Math dept HW template example
+% v0.04 by Eric J. Malm, 10 Mar 2005
+%----------------------------------------------------------------
+\documentclass[12pt,letterpaper,boxed]{hmcpset}
+
+% set 1-inch margins in the document
+\usepackage[margin=1in]{geometry}
+
+% include this if you want to import graphics files with /includegraphics
+\usepackage{graphicx}
+
+% include this to insert MATLAB code, this will also load package xcolor
+\usepackage[framed,numbered]{matlab-prettifier}
+
+%-----------
+% Define Colors
+%-----------
+%\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{LightGray}{gray}{0.9}
+
+%----------
+% 添加缩进为两个元素
+%----------
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+%----------
+% 定义中文环境
+%----------
+\usepackage{xeCJK}
+\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKfamilyfont{zhsong}{SimSun}
+\setCJKfamilyfont{zhhei}{SimHei}
+\setCJKfamilyfont{zhkai}{KaiTi}
+\setCJKfamilyfont{zhfs}{FangSong}
+\setCJKfamilyfont{zhli}{LiSu}
+\setCJKfamilyfont{zhyou}{YouYuan}
+\newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
+\newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
+\newcommand*{\kaiti}{\CJKfamily{zhkai}}   % 楷体
+\newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+\newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
+\newcommand*{\yuanti}{\CJKfamily{zhyou}}  % 圆体
+
+% No new page when make title
+\newcommand{\inlinemaketitle}{{\let\newpage\relax\maketitle}}
+
+%-----------
+% 输入化学式
+%-----------
+\usepackage[version=4]{mhchem}
+
+%-----------
+% 代码排版
+%-----------
+% 若重定义myminted，则无需包含minted
+%\usepackage[cache=false]{minted}
+\usepackage[most, minted]{tcolorbox}
+\newtcblisting{myminted}[2][]{%
+    listing engine=minted,
+    minted language=#2,
+    listing only,
+    breakable,
+    enhanced,
+    top=0mm,
+    bottom=0mm,
+    opacityframe=0,
+    borderline west={2pt}{-1pt}{black},
+    sharp corners,
+    %attach boxed title to top center = {yshift = -\tcboxedtitleheight/2},
+    minted options = {
+        linenos, 
+        breaklines=true, 
+        %breakbefore=., 
+        fontsize=\footnotesize, 
+        numbersep=2mm
+    },
+    overlay={%
+        \begin{tcbclipinterior}
+            %\fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+            \fill[gray!25] ([yshift=0.5mm]frame.south west) rectangle ([yshift=-0.5mm,xshift=4mm]frame.north west);
+        \end{tcbclipinterior}
+    },
+    #1   
+}
+
+% info for header block in upper right hand corner
+\class{2014011716 工物41 李锦}
+\assignment{第1章作业}
+\duedate{\today}
+%\name{Eric Malm}
+%\class{MA 198}
+%\assignment{Homework \#1}
+%\duedate{09/03/2004}
