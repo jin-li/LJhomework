@@ -1,0 +1,28 @@
+\usepackage[most, minted]{tcolorbox}
+\newtcblisting{myminted}[2][]{%
+    listing engine=minted,
+    minted language=#2,
+    listing only,
+    breakable,
+    enhanced,
+    top=0mm,
+    bottom=0mm,
+    opacityframe=0,
+    borderline west={2pt}{-1pt}{black},
+    sharp corners,
+    %attach boxed title to top center = {yshift = -\tcboxedtitleheight/2},
+    minted options = {
+        linenos, 
+        breaklines=true, 
+        %breakbefore=., 
+        fontsize=\footnotesize, 
+        numbersep=2mm
+    },
+    overlay={%
+        \begin{tcbclipinterior}
+            %\fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
+            \fill[gray!25] ([yshift=0.5mm]frame.south west) rectangle ([yshift=-0.5mm,xshift=4mm]frame.north west);
+        \end{tcbclipinterior}
+    },
+    #1   
+}
