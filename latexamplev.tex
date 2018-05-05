@@ -1,0 +1,34 @@
+%----------
+% 插入latex代码及预览
+%----------
+%\usepackage{xcolor}
+%\definecolor{lstbgcolor}{rgb}{0.9,0.9,0.9} 
+% 
+%\usepackage{listings}
+%\lstloadlanguages{[LaTeX]TeX}
+% 
+%\usepackage{fancyvrb}
+\definecolor{lstbgcolor}{rgb}{0.9,0.9,0.9}
+\lstloadlanguages{[LaTeX]TeX}
+
+\newenvironment{latexamplev}[1][language={[LaTeX]TeX}]
+{\lstset{backgroundcolor=\color{lstbgcolor},
+    keywordstyle=\color[rgb]{0,0,1},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{0.627,0.126,0.941},
+    breaklines=true,
+    prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=single,
+    language={[LaTeX]TeX},
+    basicstyle=\footnotesize\ttfamily, #1}
+  \VerbatimEnvironment\begin{VerbatimOut}{latexamplev.verb.out}}
+  {\end{VerbatimOut}\noindent
+  \\[-0.7em]
+  \begin{minipage}{\linewidth}
+    \lstinputlisting[]{latexamplev.verb.out}%
+  \end{minipage}\qquad \\
+  \begin{minipage}{\linewidth}
+    \input{latexamplev.verb.out}
+  \end{minipage}\\
+}
+
