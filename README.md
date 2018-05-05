@@ -11,7 +11,7 @@ An example:
 - A small black square block is added automatically at the end of solution
 - Use "myminted" to insert codes for all kinds of languages  
 
-*For more functions and usage, please refer to the full [eg.pdf](#full)*
+*For more functions and usage, please refer to the full [eg.pdf](eg.pdf)*
 
 
 ## Usage
@@ -23,6 +23,8 @@ An example:
 
     To be noted, if you use references or cross references, you may need execute this command sever times until there's no "undefined reference" warning.
 
+<<<<<<< HEAD
+=======
 ___
 ## Full Example <span id="full"> </span>
 ![eg-1](/pic/eg/eg-1.PNG)
@@ -34,3 +36,4 @@ ___
 ![eg-7](/pic/eg/eg-7.PNG)
 ![eg-8](/pic/eg/eg-8.PNG)
 ![eg-9](/pic/eg/eg-9.PNG)
+>>>>>>> 5bcd95ec8473b0b1d7188451f82fcffed1974bca
