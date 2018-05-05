@@ -5,7 +5,7 @@ This is a LaTeX template for homework writing, modified from hmcpset, which is a
 
 ## Features
 An example:  
-![eg](./pic/eg/eg-1.PNG)
+![eg](/pic/eg/eg-1.PNG)
 - Insert head block automatically
 - Problems are boxed
 - A small black square block is added automatically at the end of solution
@@ -25,12 +25,12 @@ An example:
 
 ___
 ## Full Example <span id="full"> </span>
-![eg-1](./pic/eg/eg-1.PNG)
-![eg-2](./pic/eg/eg-2.PNG)
-![eg-3](./pic/eg/eg-3.PNG)
-![eg-4](./pic/eg/eg-4.PNG)
-![eg-5](./pic/eg/eg-5.PNG)
-![eg-6](./pic/eg/eg-6.PNG)
-![eg-7](./pic/eg/eg-7.PNG)
-![eg-8](./pic/eg/eg-8.PNG)
-![eg-9](./pic/eg/eg-9.PNG)
+![eg-1](/pic/eg/eg-1.PNG)
+![eg-2](/pic/eg/eg-2.PNG)
+![eg-3](/pic/eg/eg-3.PNG)
+![eg-4](/pic/eg/eg-4.PNG)
+![eg-5](/pic/eg/eg-5.PNG)
+![eg-6](/pic/eg/eg-6.PNG)
+![eg-7](/pic/eg/eg-7.PNG)
+![eg-8](/pic/eg/eg-8.PNG)
+![eg-9](/pic/eg/eg-9.PNG)
