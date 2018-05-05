@@ -1,5 +1,8 @@
 ## Temporary files
 *~
+*.listing
+*.pdf
+test*
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

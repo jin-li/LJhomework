@@ -52,6 +52,9 @@
 % No new page when make title
 \newcommand{\inlinemaketitle}{{\let\newpage\relax\maketitle}}
 
+% 表示微分的d应为正体
+\newcommand{\ud}{\mathrm{d}}
+
 %-----------
 % 输入化学式
 %-----------
@@ -59,54 +62,91 @@
 
 % 国际制单位
 \usepackage{siunitx}
+%  Note that the sign must be
+%  µ
+%  MICRO SIGN
+%  Unicode: U+00B5, UTF-8: C2 B5
+% and \emph{not}
+%  μ
+%  GREEK SMALL LETTER MU
+%  Unicode: U+03BC, UTF-8: CE BC
+\sisetup{math-micro=\text{µ},text-micro=µ}
+% Add a space before the unit
+\newcommand{\sis}{\ \si}
+% Add a quad space before the unit
+\newcommand{\siq}{\quad\si}
+
+% 约分
+\usepackage{cancel}
 
 % 有序列表
 \usepackage{enumitem}
+%\usepackage{enumerate}
 
-% 三线表可用
+% 三线表
 \usepackage{booktabs}
 
 % 表格内斜线，可用于添加斜线表头，也可用于绘制其他表格内的斜线
 \usepackage{diagbox}
 
 % 插入带颜色超链接
-\usepackage[colorlinks,linkcolor=blue]{hyperref}
+% 在文中使用时可通过 \hypersetup{linkcolor=colorname} 来定义颜色
+% 如 \hypersetup{linkcolor=green,urlcolor=blue,citecolor=yellow,filecolor=purple}等
+\usepackage[colorlinks]{hyperref}
+%\usepackage[colorlinks,linkcolor=blue,urlcolor=blue]{hyperref}
+
+% 插入环绕型图片
+\usepackage{wrapfig}
+
+% 插入子图
+\usepackage{subfigure}
+
+% 绘制电路图
+%\usepackage{circ}
+%\usepackage[basic,box,gate,oldgate,ic,optics,physics]{circ}  
+\usepackage[european resistors]{circuitikz}
+\usepackage{pbox}
+\newcommand{\ctikzlabel}[2]{\pbox{\textwidth}{#1\\#2}} % 电路元件多行标签
+
+% 浮动体
+\usepackage{float}
+
+% 标题属性
+\usepackage{caption}
+
+%-----------
+% 参考文献
+% 右上标，方括号，排序并压缩连续编号
+%-----------
+\usepackage[super,square,sort&compress]{natbib}
+
+% 日语假名注音（振り仮名）
+\usepackage{ruby}
+%\renewcommand{\rubysep}{0.2em} % Set verticle distance from kanji
+%\renewcommand{\rubysize}{0.5}  % Set furugana size
 
 %-----------
 % 代码排版
-%-----------
-% 若重定义myminted，则无需包含minted
+% 若重定义myminted，则无需包含minted，在input本文件后使用\input{myminted.tex}
+%----------
 %\usepackage[cache=false]{minted}
-\usepackage[most, minted]{tcolorbox}
-\newtcblisting{myminted}[2][]{%
-    listing engine=minted,
-    minted language=#2,
-    listing only,
-    breakable,
-    enhanced,
-    top=0mm,
-    bottom=0mm,
-    opacityframe=0,
-    borderline west={2pt}{-1pt}{black},
-    sharp corners,
-    %attach boxed title to top center = {yshift = -\tcboxedtitleheight/2},
-    minted options = {
-        linenos, 
-        breaklines=true, 
-        %breakbefore=., 
-        fontsize=\footnotesize, 
-        numbersep=2mm
-    },
-    overlay={%
-        \begin{tcbclipinterior}
-            %\fill[gray!25] (frame.south west) rectangle ([xshift=4mm]frame.north west);
-            \fill[gray!25] ([yshift=0.5mm]frame.south west) rectangle ([yshift=-0.5mm,xshift=4mm]frame.north west);
-        \end{tcbclipinterior}
-    },
-    #1   
-}
 
-% info for header block in upper right hand corner
+%----------
+% 已在其他文件中使用的宏包，请避免重复包含
+%----------
+\usepackage{xcolor}   % Has been used in latexample.tex
+\usepackage{listings} % Has been used in latexample.tex
+\usepackage{fancyvrb} % Has been used in latexample.tex
+
+ 
+ 
+% 中文破折号
+\newcommand{\cndash}{\ \rule{0.0em}{0pt}\rule[0.35em]{1.4em}{0.05em}\rule{0.2em}{0pt}}
+
+%----------
+% info for header block in upper right hand corner.
+% You can use the following template.
+%----------
 %\name{Eric Malm}
 %\class{MA 198}
 %\assignment{Homework \#1}
