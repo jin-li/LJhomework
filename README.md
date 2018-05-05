@@ -23,17 +23,3 @@ An example:
 
     To be noted, if you use references or cross references, you may need execute this command sever times until there's no "undefined reference" warning.
 
-<<<<<<< HEAD
-=======
-___
-## Full Example <span id="full"> </span>
-![eg-1](/pic/eg/eg-1.PNG)
-![eg-2](/pic/eg/eg-2.PNG)
-![eg-3](/pic/eg/eg-3.PNG)
-![eg-4](/pic/eg/eg-4.PNG)
-![eg-5](/pic/eg/eg-5.PNG)
-![eg-6](/pic/eg/eg-6.PNG)
-![eg-7](/pic/eg/eg-7.PNG)
-![eg-8](/pic/eg/eg-8.PNG)
-![eg-9](/pic/eg/eg-9.PNG)
->>>>>>> 5bcd95ec8473b0b1d7188451f82fcffed1974bca
