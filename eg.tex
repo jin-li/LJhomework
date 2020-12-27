@@ -52,14 +52,14 @@ fun=fit(ti,ni,f);
   %\end{lstlisting}
   \par
   上述代码给出的拟合结果为：
-	\[\begin{split}
-		N_0     &  = 5507\ \ (5484, 5530) \quad \si{cpm} \\
-		\lambda &  = 0.0489\ \ (0.04808, 0.04972) \quad \si{d^{-1}} \\
-	\end{split}\]
+    \[\begin{split}
+        N_0     &  = 5507\ \ (5484, 5530) \quad \si{cpm} \\
+        \lambda &  = 0.0489\ \ (0.04808, 0.04972) \quad \si{d^{-1}} \\
+    \end{split}\]
   其中括号表示95\%的置信区间。
   \par
   因此，该核素的衰变常数为$0.0489 \text{d}^{-1}$，根据半衰期与衰变常数的关系：
-	\[T_{1/2}=\frac{\text{ln}2}{\lambda}=14.2  \text{d}\]
+    \[T_{1/2}=\frac{\text{ln}2}{\lambda}=14.2  \text{d}\]
   即该核素的半衰期为14.2天。查得此核素为$\sideset{^{32}_{15}}{}{\mathop{\mathrm{P}}}$。
 \end{solution}
 
@@ -71,25 +71,25 @@ fun=fit(ti,ni,f);
 \vspace{1cm}
 
 \begin{problem}[1]
-	\textbf{Insert Pictures}
-	\begin{enumerate}[nosep,label=(\arabic*)]
+    \textbf{Insert Pictures}
+    \begin{enumerate}[nosep,label=(\arabic*)]
     \item Single picture
-		\item Pictures in rows and columns
-		\item Wraped picture
-	\end{enumerate}
+        \item Pictures in rows and columns
+        \item Wraped picture
+    \end{enumerate}
 \end{problem}
 
 \begin{solution}
-	\begin{enumerate}[nosep,label=(\arabic*)]
-		\item \textbf{Single picture} \\
-			\begin{itemize}
-	        \item Using center environment to insert an picture: \\
+    \begin{enumerate}[nosep,label=(\arabic*)]
+        \item \textbf{Single picture} \\
+            \begin{itemize}
+            \item Using center environment to insert an picture: \\
 \begin{latexample}[]
 \begin{center}
   \includegraphics[width=0.5\textwidth]{./pic/latex.png}
 \end{center}
 \end{latexample}
-		    \item Using figure environment to insert an picture with description: \\
+            \item Using figure environment to insert an picture with description: \\
 \begin{latexample}[]
 \begin{figure}[H]
   \centering
@@ -97,73 +97,73 @@ fun=fit(ti,ni,f);
   \caption{eg}
 \end{figure}
 \end{latexample}
-			\end{itemize}
+            \end{itemize}
 
-		\item \textbf{Pictures in rows and columns}
-			\begin{itemize}
-				\item Multi-rows and multi-columns \\
+        \item \textbf{Pictures in rows and columns}
+            \begin{itemize}
+                \item Multi-rows and multi-columns \\
 \begin{latexamplev}[]
 \begin{figure}[H]
   \captionsetup{name={Fig.},font={small}}
   \centering
   \begin{minipage}[b]{0.3\textwidth}
-	\centering
-	\includegraphics[width=0.7\textwidth]{./pic/01.png}
-	\caption{eg1}
+    \centering
+    \includegraphics[width=0.7\textwidth]{./pic/01.png}
+    \caption{eg1}
   \end{minipage}
   %\hspace{0.05\textwidth}
   \begin{minipage}[b]{0.3\textwidth}
-	\centering
-	\includegraphics[width=0.7\textwidth]{./pic/02.png}
-	\caption{eg2}
+    \centering
+    \includegraphics[width=0.7\textwidth]{./pic/02.png}
+    \caption{eg2}
   \end{minipage} \\
   \begin{minipage}[b]{0.3\textwidth}
-	\centering
-	\includegraphics[width=0.7\textwidth]{./pic/03.png}
-	\caption{eg3}
+    \centering
+    \includegraphics[width=0.7\textwidth]{./pic/03.png}
+    \caption{eg3}
   \end{minipage}
   \hspace{-0.03\textwidth}
   \begin{minipage}[b]{0.3\textwidth}
-	\centering
-	\includegraphics[width=0.7\textwidth]{./pic/04.png}
-	\caption{eg4}
+    \centering
+    \includegraphics[width=0.7\textwidth]{./pic/04.png}
+    \caption{eg4}
   \end{minipage}
   \hspace{-0.03\textwidth}
   \begin{minipage}[b]{0.3\textwidth}
-	\centering
-	\includegraphics[width=0.7\textwidth]{./pic/05.png}
-	\caption{eg5}
+    \centering
+    \includegraphics[width=0.7\textwidth]{./pic/05.png}
+    \caption{eg5}
   \end{minipage}
  \end{figure}
 \end{latexamplev}
 
-				\item Subfigures in columns: \\
+                \item Subfigures in columns: \\
 \begin{latexamplev}[]
 \begin{figure}[H]
   \centering
   \subfigure[first subfigure]{
-	\begin{minipage}[b]{0.3\textwidth}
+    \begin{minipage}[b]{0.3\textwidth}
       \includegraphics[width=1\textwidth]{./pic/06.png} \\
-	  \vspace{0.3em}
-	  \includegraphics[width=1\textwidth]{./pic/latex.png}
-	\end{minipage}
+      \vspace{0.3em}
+      \includegraphics[width=1\textwidth]{./pic/latex.png}
+    \end{minipage}
   }
   \hspace{2em}
   \subfigure[second subfigure]{
-	\begin{minipage}[b]{0.3\textwidth}
+    \begin{minipage}[b]{0.3\textwidth}
       \centering
-	  \includegraphics[angle=90,width=1.0\textwidth]{./pic/06.png}\vspace{1em} \\
-	  \includegraphics[angle=90,width=0.7\textwidth]{./pic/latex.png}
-	\end{minipage}
+      \includegraphics[angle=90,width=1.0\textwidth]{./pic/06.png}\vspace{1em} \\
+      \includegraphics[angle=90,width=0.7\textwidth]{./pic/latex.png}
+    \end{minipage}
   }
   \caption{vertical subfigures}
 \end{figure}
 \end{latexamplev}
-			%	\item Subfigures as one big figure
-			\end{itemize}
+            %    \item Subfigures as one big figure
+            \end{itemize}
 
-		\item \textbf{Wraped picture} \\
-			Insert a figure with texts around: \\
+        \item \textbf{Wraped picture} \\
+            Insert a figure with texts around: \\
 \begin{latexample}[]
 \begin{wrapfigure}{r}{0pt}
   \includegraphics[width=2.5cm]{./pic/07.png}
@@ -172,83 +172,83 @@ fun=fit(ti,ni,f);
 \renewcommand{\rubysep}{0.2pt}
 \textbf{Emoji} (Japanese: \ruby{絵}{え}\ruby{文}{も}\ruby{字}{じ}) are ideograms and smileys used in electronic messages and web pages. Emoji exist in various genres, including facial expressions, common objects, places and types of weather, and animals. They are much like emoticons, but emoji are actual pictures instead of typographics. 
 \end{latexample}
-	\end{enumerate}
+    \end{enumerate}
 \end{solution}
 
 \begin{problem}[2]
-	\textbf{Insert Tables}
-	\begin{enumerate}[nosep,label=(\arabic*)]
-		\item A simple table 
-		\item Three-line table
-		\item Table with slash header
-	\end{enumerate}
+    \textbf{Insert Tables}
+    \begin{enumerate}[nosep,label=(\arabic*)]
+        \item A simple table 
+        \item Three-line table
+        \item Table with slash header
+    \end{enumerate}
 \end{problem}
 
 \begin{solution}
-	\begin{enumerate}[nosep,label=(\arabic*)]
+    \begin{enumerate}[nosep,label=(\arabic*)]
 
-		\item \textbf{A simple table} \\
+        \item \textbf{A simple table} \\
 \begin{latexamplev}[]
 \begin{table}[H]
   \centering
   \caption{Radiation decrease}
   \label{rad}
   \begin{tabular}{|c|c|c|c|c|c|c|c|}
-	\hline
-	时间（天） & 0 & 1 & 2 & 3 & 5 & 10 & 20 \\
-	\hline
-	计数率（cpm） & 5500 & 5240 & 5000 & 4750 & 4320 & 3400 & 2050 \\
-	\hline
+    \hline
+    时间（天） & 0 & 1 & 2 & 3 & 5 & 10 & 20 \\
+    \hline
+    计数率（cpm） & 5500 & 5240 & 5000 & 4750 & 4320 & 3400 & 2050 \\
+    \hline
   \end{tabular}
 \end{table}
 \end{latexamplev}
 
-		\item \textbf{Table with slash header} \\
+        \item \textbf{Table with slash header} \\
 \begin{latexamplev}[]
 \begin{table}[H]
   \centering
   \begin{tabular}{c|cc}
-	\hline
-	\diagbox{$p$/\si{MPa}}{$t$/\si{\degreeCelsius}} & 300 & 350 \\
-	\hline
-	15.0 & 565.8 & \underline{112.8} \\
-	17.5 & 570.5 & 452.5 \\
-	20.0 & 575.5 & 465.0 \\
-	\hline
+    \hline
+    \diagbox{$p$/\si{MPa}}{$t$/\si{\degreeCelsius}} & 300 & 350 \\
+    \hline
+    15.0 & 565.8 & \underline{112.8} \\
+    17.5 & 570.5 & 452.5 \\
+    20.0 & 575.5 & 465.0 \\
+    \hline
   \end{tabular}
 \end{table}
 \end{latexamplev}
 
-		\item \textbf{Three-line table} \\
+        \item \textbf{Three-line table} \\
 \begin{latexamplev}[]
 \begin{table}[H]
-	\centering
-	\begin{tabular}{ccc}
-		\toprule
-		温度$t$/\si{\degreeCelsius} & 压力$p$/\si{\mega\pascal} & 比焓$h$/(\si{kJ/kg}) \\
-		\midrule
-		340 & 14.608 & 1596 \\
-		350 & 16.537 & 1672 \\
-		\bottomrule
-	\end{tabular}
+    \centering
+    \begin{tabular}{ccc}
+        \toprule
+        温度$t$/\si{\degreeCelsius} & 压力$p$/\si{\mega\pascal} & 比焓$h$/(\si{kJ/kg}) \\
+        \midrule
+        340 & 14.608 & 1596 \\
+        350 & 16.537 & 1672 \\
+        \bottomrule
+    \end{tabular}
 \end{table}
 \end{latexamplev}
 
-	\end{enumerate}
+    \end{enumerate}
 \end{solution}
 
 \begin{problem}[3]
-	\textbf{Codes Display}
-	\begin{enumerate}[nosep,label=(\arabic*)]
-	\item Codes for different languages
-	\item \LaTeX \ code and its output
-	\end{enumerate}
+    \textbf{Codes Display}
+    \begin{enumerate}[nosep,label=(\arabic*)]
+    \item Codes for different languages
+    \item \LaTeX \ code and its output
+    \end{enumerate}
 \end{problem}
 
 \begin{solution}
-	\begin{enumerate}[nosep,label=(\arabic*)]
-	\item \textbf{Codes for different languages} \\
-		Use \textit{myminted} environment to display C++, MATLAB, Python, ... and many other kinds of languages. To find all the language supported, execute command ``\verb|pygmentize| \verb| -L lexers|'' in your terminal.\\
+    \begin{enumerate}[nosep,label=(\arabic*)]
+    \item \textbf{Codes for different languages} \\
+        Use \textit{myminted} environment to display C++, MATLAB, Python, ... and many other kinds of languages. To find all the language supported, execute command ``\verb|pygmentize| \verb| -L lexers|'' in your terminal.\\
 \begin{latexample}[]
 \begin{myminted}{c++}
 #include <iostream>
@@ -262,75 +262,75 @@ int main()
 \end{myminted}
 \end{latexample}
 
-	\item \textbf{\LaTeX \ code and its output} \\
-		There are two types: one is that display \LaTeX codes box on left side and output on right side, the other is that display output under \LaTeX codes box.
-		\begin{itemize}
-			\item \textbf{Left-code \& right-output} \cndash \textit{latexample} environment \\
-				Use \verb+\input{latexample.tex}+ at the beginning of the tex file. Use as this:
+    \item \textbf{\LaTeX \ code and its output} \\
+        There are two types: one is that display \LaTeX codes box on left side and output on right side, the other is that display output under \LaTeX codes box.
+        \begin{itemize}
+            \item \textbf{Left-code \& right-output} \cndash \textit{latexample} environment \\
+                Use \verb+\input{latexample.tex}+ at the beginning of the tex file. Use as this:
 \begin{verbatim}
 \begin{latexample}
-	  ... LaTeX code here ...
+      ... LaTeX code here ...
 \end{latexample}
 \end{verbatim}
-				Following is an example\label{enum} and the effect: \\
+                Following is an example\label{enum} and the effect: \\
 \begin{latexample}[]
 \begin{enumerate}[nosep,label=(\arabic*)]
   \item first
     \begin{itemize}
-	  \item something
-	  \item something else
-	\end{itemize}
+      \item something
+      \item something else
+    \end{itemize}
   \item second
 \end{enumerate}
 \end{latexample}
 
-			\item \textbf{Up-code \& down-output} \cndash \textit{latexamplev} environment \\
-				Use \verb+\input{latexamplev.tex}+ at the beginning of the tex file. Use as this:
+            \item \textbf{Up-code \& down-output} \cndash \textit{latexamplev} environment \\
+                Use \verb+\input{latexamplev.tex}+ at the beginning of the tex file. Use as this:
 \begin{verbatim}
 \begin{latexamplev}
-	  ... LaTeX code here ...
+      ... LaTeX code here ...
 \end{latexamplev}
 \end{verbatim}
-				Following is an example and the effect: \\
+                Following is an example and the effect: \\
 \begin{latexamplev}[]
 \begin{enumerate}[nosep,label=(\arabic*)]
   \item first
     \begin{itemize}
-	  \item something
-	  \item something else
-	\end{itemize}
+      \item something
+      \item something else
+    \end{itemize}
   \item second
 \end{enumerate}
 \end{latexamplev}
 
-		\end{itemize}
-	\end{enumerate}
+        \end{itemize}
+    \end{enumerate}
 
 \end{solution}
 
 \begin{problem}[4]
-	\textbf{Math Input}
+    \textbf{Math Input}
 \end{problem}
 
 \begin{solution}
-	\hypersetup{urlcolor=purple}
-	This is a very huge question and I recommand to read a Chinese book \href{http://www.latexstudio.net/wp-content/uploads/2018/02/ChinaTeXMathFAQ_V1.1.pdf}{China\TeX \ Math FAQ} or an English book \href{https://www.springer.com/cn/book/9780387688527#otherversion=9780387322896}{More Math Into \LaTeX}.	
+    \hypersetup{urlcolor=purple}
+    This is a very huge question and I recommand to read a Chinese book \href{http://www.latexstudio.net/wp-content/uploads/2018/02/ChinaTeXMathFAQ_V1.1.pdf}{China\TeX \ Math FAQ} or an English book \href{https://www.springer.com/cn/book/9780387688527#otherversion=9780387322896}{More Math Into \LaTeX}.    
 \end{solution}
 
 \begin{problem}[5]
-	\textbf{Enumerate \& Itemize}
+    \textbf{Enumerate \& Itemize}
 \end{problem}
 
 \begin{solution}
-	%\hypersetup{citecolor=purple}
-	As shows the example of Problem 3, \href{enum}{\ref{enum}}. Here package \textit{enumitem} instead of package \textit{enumerate} \ is used for enumerate and package \textit{itemize}\ is used for itemize. \\
+    %\hypersetup{citecolor=purple}
+    As shows the example of Problem 3, \href{enum}{\ref{enum}}. Here package \textit{enumitem} instead of package \textit{enumerate} \ is used for enumerate and package \textit{itemize}\ is used for itemize. \\
 \begin{latexample}[]
 \begin{enumerate}[nosep,label=(\arabic*)]
   \item first
-	  \begin{itemize}
-	  \item something
-	  \item something else
-	\end{itemize}
+      \begin{itemize}
+      \item something
+      \item something else
+    \end{itemize}
   \item second
 \end{enumerate}
 \end{latexample}
@@ -338,21 +338,21 @@ int main()
 \end{solution}
 
 \begin{problem}[6]
-	\textbf{Plot Circuits}
+    \textbf{Plot Circuits}
 \end{problem}
 
 \begin{solution}
-	Both package \textit{circuitikz} \ and\ \textit{circ} can be used for plotting circuits. \textit{circuitikz} \ is chosen in this template. 
-	\hypersetup{urlcolor=purple}
-	\par Use command ``\verb|texdoc circuitikz|'' in your terminal to see its manual. And here is a \href{http://topspeedsnail.com/latex-circuitikz-circuit}{webpage} for introducing how to use it.
-	\par Here is an example: \\
+    Both package \textit{circuitikz} \ and\ \textit{circ} can be used for plotting circuits. \textit{circuitikz} \ is chosen in this template. 
+    \hypersetup{urlcolor=purple}
+    \par Use command ``\verb|texdoc circuitikz|'' in your terminal to see its manual. And here is a \href{http://topspeedsnail.com/latex-circuitikz-circuit}{webpage} for introducing how to use it.
+    \par Here is an example: \\
 \begin{latexamplev}[]
 \begin{figure}[H]
   \centering
   \begin{circuitikz}
     \draw (0,0) node [anchor=east] {\ctikzlabel{$\ U_0$}{$12\si{V}$}} to [R,l=$R_A$,o-*]
-  	(3,0) to[short] (3,1) to [R,l=$R_B$] (7,1)
-  	to[short] (7,0) to [R,l=$R_C$,*-o] (10,0) node [anchor=west] {\ctikzlabel{$\ U_1$}{$15\si{V}$}};
+      (3,0) to[short] (3,1) to [R,l=$R_B$] (7,1)
+      to[short] (7,0) to [R,l=$R_C$,*-o] (10,0) node [anchor=west] {\ctikzlabel{$\ U_1$}{$15\si{V}$}};
     \draw (3,0) to[short] (3,-1) to [R,l=$R_D$] (7,-1) to[short] (7,0);
   \end{circuitikz}
 \end{figure}
