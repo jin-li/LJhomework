@@ -131,8 +131,12 @@
 %% commands for upper-right id header block
 \newcommand{\headerblock}{%
 \begin{flushright}
+%\mbox{\ifx\hmcpset@assignment\empty\else\protect\\\hmcpset@assignment\fi}
+%\ifx\hmcpset@duedate\empty\else\protect\\\hmcpset@duedate\fi%
 \mbox{\hmcpset@name}\protect\\
+%\mbox{\ifx\hmcpset@name\empty\else\protect\\\hmcpset@name\fi}
 \mbox{\hmcpset@class}\protect\\
+%\mbox{\ifx\hmcpset@class\empty\else\protect\\\hmcpset@class\fi}
 \mbox{\hmcpset@assignment}\protect\\
 \hmcpset@duedate%
 \ifx\hmcpset@extraline\empty\else\protect\\\hmcpset@extraline\fi%
